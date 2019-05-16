@@ -248,7 +248,7 @@ namespace Currencies
 			case Currency::none:
 				return "";
 			case XMR:
-				return "XMR";
+				return "TOKL";
 			case USD:
 				return "USD";
 			case AUD:
@@ -471,7 +471,7 @@ namespace Currencies
 		Currencies::Currency inCcy
 	) {
 		if (inCcy == Currencies::XMR) {
-			BOOST_THROW_EXCEPTION(logic_error("nonAtomicCurrency_localized_formattedString should not be called with ccy of XMR"));
+			BOOST_THROW_EXCEPTION(logic_error("nonAtomicCurrency_localized_formattedString should not be called with ccy of TOKL"));
 			return "";
 		}
 		string decimalSeparator; decimalSeparator.push_back(money_decimal_punctuation_char());
